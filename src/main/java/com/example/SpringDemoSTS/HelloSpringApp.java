@@ -22,4 +22,9 @@ public class HelloSpringApp {
         model.addAttribute("message", "Hello from BridgeLabz");
         return "Hello from BridgeLabz";
     }
+        // REST endpoint that handles GET requests
+        @GetMapping("/helloEveryone")
+        public String helloWorldUC3() {
+            return "Hello from BridgeLabz";
+        }
 }
